@@ -1,5 +1,9 @@
 # code-challenge-statistics
 
+Start app: "  ./gradlew run".
+
+|||||||||||||||||||||||||||||||||||||||||||||||
+
 I could not find a way to fulfill the O(1) requirements:
 
 i) /transactions: executes in constant time but memory consumption depends on amount of transactions in the last minute.
