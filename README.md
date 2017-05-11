@@ -9,7 +9,7 @@ ii) /statistics: memory consumption depends on amount of transactions in the las
  Calculating the sum of a collection is O(n) as it has to look at
  each of its members. 
  
- -
+ 
  
  Alternatives thought of:
  
@@ -18,6 +18,5 @@ ii) /statistics: memory consumption depends on amount of transactions in the las
  
  b) Updating the sum every time a new transaction is added - would not help as we'd need to keep
  track of the expiring transactions to be able to deduct their values, e.g. by storing them in a DelayQueue. 
- Which would not solve it as poll() and offer() to the delay 
- queue are O(log(n)).
+ Which would not solve it as poll() and offer() to the DelayQueue are O(log(n)).
  
